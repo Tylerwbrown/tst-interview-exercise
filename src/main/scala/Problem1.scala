@@ -1,7 +1,4 @@
 object Problem1:
-  @main def runProblem1() =
-    getBestGroupPrices(Data.rates, Data.cabinPrices).foreach(println)
-
   case class Rate(rateCode: String, rateGroup: String)
 
   case class CabinPrice(cabinCode: String, rateCode: String, price: BigDecimal)
