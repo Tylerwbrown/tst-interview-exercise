@@ -23,4 +23,3 @@ object Data:
     Promotion("P4", Seq("P2")),
     Promotion("P5", Seq("P2"))
   )
-

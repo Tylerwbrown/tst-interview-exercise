@@ -9,6 +9,3 @@
   List("P1", "P3").foreach: p =>
     println(s"$p COMBOS")
     combinablePromotions(p, Data.promotions).foreach(println)
-
-
-  

@@ -26,4 +26,3 @@ class Problem2Test extends munit.FunSuite:
       PromotionCombo(Seq("P3", "P4", "P5"))
     )
     assertEquals(result, expected)
-
