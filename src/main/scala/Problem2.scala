@@ -1,18 +1,11 @@
 object Problem2:
   @main def runProblem2() =
-    val promotions = List(
-      Promotion("P1", Seq("P3")),
-      Promotion("P2", Seq("P4", "P5")),
-      Promotion("P3", Seq("P1")),
-      Promotion("P4", Seq("P2")),
-      Promotion("P5", Seq("P2"))
-    )
     println("All Combos")
-    allCombinablePromotions(promotions).foreach(println)
+    allCombinablePromotions(Data.promotions).foreach(println)
 
     List("P1", "P3").foreach: p =>
       println(s"$p COMBOS")
-      combinablePromotions(p, promotions).foreach(println)
+      combinablePromotions(p, Data.promotions).foreach(println)
 
   case class Promotion(code: String, notCombinableWith: Seq[String])
 
